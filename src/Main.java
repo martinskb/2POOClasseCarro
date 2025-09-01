@@ -1,15 +1,17 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+/*
+2. Classe Carro (Atributos Privados e Getters)
+• Crie a classe Carro com atributos privados:
+◦ marca (String)
+◦ ano (int)
+• Crie métodos get para acessar cada atributo.
+• No main, crie um carro e exiba suas informações.
+ */
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Carro Carro1 = new Carro("Bugatti",2019);
+        Carro Carro2 = new Carro("Porsche",1964);
+        System.out.println("Porsche 911,Marca: " + Carro2.getMarca() + ",Ano: " + Carro2.getAno() );
+        System.out.println("Bugatti Divo,Marca: " + Carro1.getMarca() + ",Ano: " + Carro1.getAno());
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
     }
 }
